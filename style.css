@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+
+/* Root values */
+
+:root {
+    /* Primary Colors */
+
+    --clr-cyan-400: hsl(185, 75%, 39%);
+    --clr-blue-600: hsl(227, 10%, 46%);
+    --clr-cyan-800: hsl(229, 23%, 23%);
+  
+    /* Neutral Colors */
+
+    --clr-gray-500:  hsl(0, 0%, 59%);
+
+    /* Text and font */
+
+    --fs-main: 1.125rem;
+    --fs-city: .9rem;
+    --fs-stats: .7rem;
+
+    --fw-normal: 400;
+    --fw-bold: 700;
+
+    --ff-main: "Kumbh Sans", sans-serif;
+}
+
+/* General Style */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: var(--ff-main);
+    font-weight: var(--fw-normal);
+    font-size: var(--fs-main);
+
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: right 45vw bottom 60vh, left 50vw top 50vh;
+    background-repeat: no-repeat, no-repeat;
+    background-color: var(--clr-cyan-400);
+}
+
+.card{
+
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+
+}
+
+/* Image styling and positioning */
+
+.pattern-section {
+    position: absolute;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    overflow: hidden;
+}
+
+.profile-picture {
+    position: relative;
+    margin-top: 5.5rem;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+/* Main content styling */
+
+p {
+    color: var(--clr-blue-600);
+}
+
+span p {
+    color: var(--clr-cyan-800);
+    font-weight: var(--fw-bold);
+}
+
+#city {
+    font-size: var(--fs-city);
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+hr {
+    background-color: var(--clr-gray-500);
+    height: .5px;
+    border: none;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    width: 135px;
+    padding-block: 1rem .5rem;
+}
+
+/* Stats Section */
+
+.stats-section {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-block: 1rem;
+}
+
+.categories {
+    font-size: var(--fs-stats);
+    padding-top: .35rem;
+}
+
